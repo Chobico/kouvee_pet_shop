@@ -5,12 +5,12 @@
       app
       clipped-left
     >
-      <v-toolbar-title style="font-weight: bold">Owner</v-toolbar-title>
+      <v-toolbar-title style="font-weight: bold">Customer Service</v-toolbar-title>
     </v-app-bar>
     <v-sheet
       fluid
       class="fill-height fill-width"
-    >
+      >
       <v-navigation-drawer
         permanent
         clipped
@@ -68,26 +68,16 @@ export default {
       drawer: null,
       items: [
         {
-          title: 'Pengelolaan Akun',
+          title: 'Pembuatan Transaksi',
           subItems: [
             {
-              path: '/owner/pegawai',
-              title: 'Pegawai',
-              icon: 'mdi-account-box-multiple-outline'
-            }
-          ]
-        },
-        {
-          title: 'Produk dan Layanan',
-          subItems: [
-            {
-              path: '/owner/produk',
-              title: 'Produk',
+              path: '/customerservice/produk',
+              title: 'Transaksi Produk',
               icon: 'mdi-package-variant-closed'
             },
             {
-              path: '/owner/layanan',
-              title: 'Layanan',
+              path: '/customerservice/layanan',
+              title: 'Transaksi Layanan',
               icon: 'mdi-dog-service'
             }
           ]
@@ -96,54 +86,14 @@ export default {
           title: 'Konsumen dan Hewan',
           subItems: [
             {
-              path: '/owner/konsumen',
+              path: '/customerservice/konsumen',
               title: 'Konsumen',
               icon: 'mdi-human-handsup'
             },
             {
-              path: '/owner/hewan',
+              path: '/customerservice/hewan',
               title: 'Hewan',
               icon: 'mdi-paw'
-            },
-            {
-              path: '/owner/hewan/ukuran',
-              title: 'Ukuran Hewan',
-              icon: 'mdi-format-size'
-            },
-            {
-              path: '/owner/hewan/jenis',
-              title: 'Jenis Hewan',
-              icon: 'mdi-dog-side'
-            }
-          ]
-        },
-        {
-          title: 'Pengadaan Produk',
-          subItems: [
-            {
-              path: '/owner/supplier',
-              title: 'Supplier',
-              icon: 'mdi-truck-fast'
-            },
-            {
-              path: '/owner/pemesananproduk',
-              title: 'Pemesanan Produk',
-              icon: 'mdi-cart'
-            }
-          ]
-        },
-        {
-          title: 'Laporan',
-          subItems: [
-            {
-              path: '/owner/laporanproduk',
-              title: 'Laporan Produk',
-              icon: 'mdi-file-chart'
-            },
-            {
-              path: '/owner/laporanlayanan',
-              title: 'Laporan Layanan',
-              icon: 'mdi-file-check'
             }
           ]
         }
